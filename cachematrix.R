@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## A constructor function, it creates a list of functions to handle a cacheable matrix
+
+# A constructor function. The function defines a list of functions that can be used to create a new matrix,
+# get its value, set its inverse or get its inverse 
+
 
 makeCacheMatrix <- function(z, ...) {
   m <- NULL
@@ -20,7 +21,9 @@ makeCacheMatrix <- function(z, ...) {
 
 
 
-## Get the inverse of a matrix. From cache, if not found in case then it is computed
+# This functions get the inverse of a cacheable matrix. If the inverse matrix does exist, then it gets it from 
+# the cache, else the inverse is computed.
+
 
 cacheSolve <- function(x, ...) {
   m <- x$getInverse()
